@@ -8,6 +8,7 @@ spring:
     hikari:
       maximumPoolSize: 15
   jpa:
+    ddl-auto: create
     show_sql: true
     format_sql: true
     database-platform: org.hibernate.dialect.PostgreSQL94Dialect
