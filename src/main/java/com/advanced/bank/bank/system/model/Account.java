@@ -2,13 +2,28 @@ package com.advanced.bank.bank.system.model;
 
 import com.advanced.bank.bank.system.model.enums.AccountType;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "accounts")
 public class Account {
+
+    @Id
     private Long id;
+    @Column
     private String iban;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
     private User owner;
+    @Column
     private Long balance;
+    @Column(name = "account_type")
+    @Enumerated(EnumType.STRING)
     private AccountType accountType = AccountType.NONE;
+    @ManyToOne
+    @JoinColumn(name = "currency_id")
     private Currency currency;
+
 
     public Long getId() {
         return id;
