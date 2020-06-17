@@ -1,4 +1,4 @@
-package com.advanced.bank.bank.system.model;
+package com.advanced.bank.bank.system.model.contract;
 
 import com.advanced.bank.bank.system.model.enums.ContractType;
 
