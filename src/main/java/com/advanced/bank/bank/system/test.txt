@@ -1,0 +1,7 @@
+CompanyTU 40 25.00
+EmployeeNameA 1000.00 47
+EmployeeNameB 1200.50 56
+EmployeeNameC 1300.00 35
+EmployeeNameD 1000.00 59
+EmployeeNameE 1000.00 64
+EmployeeNameF 1000.00 39
